@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class rectangle{
+           constructor(height,width)
+           {
+               this.height=height;
+               this.width=width;
+
+           }
+           get getHeight()
+           {
+               return this.height;
+           }
+
+           get getWidth()
+           {
+               return this.width;
+           }
+        }
+        var rec1=new rectangle(50,60);
+        document.write("value of rectangle<br>");
+        document.write("height: "+rec1.getHeight);
+        document.write("<br>width: "+rec1.getWidth);
+
+
+        var rec2=new rectangle(30,40);
+        document.write("<br><br><br>value of rectangle (updated) <br>");
+        document.write("height: "+rec2.getHeight);
+        document.write("<br>width: "+rec2.getWidth);
+    </script>
+
+</body>
+</html>

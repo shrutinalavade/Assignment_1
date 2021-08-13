@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        class Rectangle {
+            constructor(length, breadth) {
+                this.length = length;
+                this.breadth = breadth;
+            }
+            get getLength(){
+                return this.length;
+            }
+            get getWidth(){
+                return this.breadth;
+            }
+        }
+        var RectObject = new Rectangle(4, 5);
+        document.write("Rectangle<br>Height: "+RectObject.getLength);
+        document.write("<br>Width: "+RectObject.getWidth);
+        
+    
+        Rectangle.prototype.getArea = function() {
+            return this.length * this.breadth
+        };
+        
+    
+        Rectangle.prototype.height = 50;
+        document.getElementById("demo").innerHTML =
+        "Rectangle Area: " + RectObject.getArea(); 
+    </script>
+</body>
+</html>

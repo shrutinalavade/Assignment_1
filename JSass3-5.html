@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Name = {
+            First: "Shruti",
+            Last: "Nalavade"
+        };
+        document.write("Name<br>first: "+Name.First);
+        document.write("<br>last: "+Name.Last);
+        
+        Name.Middle = " Vijay";
+        document.write("<hr>Updated<br>Middle: "+Name.Middle);
+
+        document.write("<br><hr>Updated Name properties using for loop: ");
+        for (let prop in Name) {
+            document.write("<br>",prop," : ",Name[prop]);
+        }
+    </script>
+</body>
+</html>
